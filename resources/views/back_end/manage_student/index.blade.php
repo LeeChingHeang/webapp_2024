@@ -1,7 +1,6 @@
 @extends('layout.main')
-@section('body')
+@section('body_left')
     <h1>
-        {{$title}}
     </h1>
 
     <ul>
@@ -9,5 +8,8 @@
             <li>{{$stu}}</li>
         @endforeach
     </ul>
+@endsection
 
+@section('body_right')
+    <h1>Testing</h1>
 @endsection

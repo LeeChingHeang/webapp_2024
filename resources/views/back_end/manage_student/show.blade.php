@@ -1,5 +1,5 @@
 @extends('layout.main')
-@section('body')
+@section('body_right')
     <h1>
         {{$studentName}} - {{$studentID}}
     </h1>
@@ -9,4 +9,7 @@
         <option value="{{$key}}">{{$value}}</option>
         @endforeach
     </select>
+@endsection
+@section('body_left')
+    <h1>Test SHow</h1>
 @endsection

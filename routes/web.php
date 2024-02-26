@@ -59,12 +59,12 @@ Route::get("/student_list",function ($id = "0"){
        "students"=>$students
    );
     return view('back_end.manage_student.index')->with($data);
-});
+})->name("stu_list");
 
 
-Route::get("/student_detial",function ($id = "0"){
+Route::get("/student_detail",function ($id = "0"){
    $studentName ="Mr. SOK SAN";
    $studentID ="IDT001";
    $educationLavel = ["PHD","MS","BA"];
    return view('back_end.manage_student.show',compact(['studentName','studentID','educationLavel']));
-});
+})->name("stu_detail");

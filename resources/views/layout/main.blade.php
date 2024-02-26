@@ -11,7 +11,12 @@
 </head>
 <body>
     @include('layout.nav')
-    @yield('body')
+
+    <div class="row">
+        <div class="col-md-6 bg-warning">@yield('body_left')</div>
+        <div class="col-md-6">@yield('body_right')</div>
+    </div>
+
     @include('layout.footer')
 </body>
 </html>
